@@ -24,3 +24,7 @@ sudo systemctl reload nginx
 echo
 echo "Obtaining an SSL cert for $1 from Let's Encrypt."
 sudo certbot --nginx -d $1
+
+echo
+echo "Deploying the demo HTML file."
+sudo cp index.html /var/www/html/
